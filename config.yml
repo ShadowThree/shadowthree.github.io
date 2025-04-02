@@ -1,0 +1,68 @@
+baseURL: "https://shadowthree.github.io/"
+title: "My Tech Blog"
+theme: PaperMod
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: My Tech Blog
+  description: "A technical blog about programming and technology"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: shadow3d
+  DateFormat: "2006-01-02 15:04:05"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  showSummary: true
+
+  profileMode:
+    enabled: false
+
+  homeInfoParams:
+    Title: "shadow3d's Blog"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/shadowthreed"
+
+mainSections:
+  - posts
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
